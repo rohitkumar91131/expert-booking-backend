@@ -25,4 +25,8 @@ bookingSocket(io)
 
 app.use(errorMiddleware)
 
+app.get("/", (req, res) => {
+  res.send("API is running")
+})
+
 server.listen(process.env.PORT)
